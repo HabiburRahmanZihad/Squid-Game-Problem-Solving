@@ -41,3 +41,16 @@ function fizzBuzz(n: number): string[] {
 
 
 // console.log(fizzBuzz(15));
+
+
+// 4. Check for Palindrome
+function isPalindrome(s: string): boolean {
+
+    const text = s.toLowerCase();
+
+    const reversed = text.split("").reverse().join("");
+
+    return text === reversed;
+}
+
+// console.log(isPalindrome("habib"));
