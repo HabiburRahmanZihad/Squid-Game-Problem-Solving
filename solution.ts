@@ -87,3 +87,19 @@ function countVowels(s: string): number {
 }
 
 // console.log(countVowels("hello"));
+
+
+// 7. Factorial
+function factorial(n: number): number {
+    if (n === 0) return 1;
+
+    let result = 1;
+
+    for (let i = 1; i <= n; i++) {
+        result = result * i;
+    }
+
+    return result;
+}
+
+// console.log(factorial(5));
