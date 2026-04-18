@@ -54,3 +54,18 @@ function isPalindrome(s: string): boolean {
 }
 
 // console.log(isPalindrome("habib"));
+
+
+
+// 5. Sum of Array Elements
+function sumArray(numbers: number[]): number {
+    let total = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        total += numbers[i];
+    }
+
+    return total;
+}
+
+// console.log(sumArray([]));
