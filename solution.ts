@@ -103,3 +103,22 @@ function factorial(n: number): number {
 }
 
 // console.log(factorial(5));
+
+
+
+// 8. Even Numbers Only
+function filterEvens(numbers: number[]): number[] {
+
+    const evenNumbers: number[] = [];
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        if (numbers[i] % 2 === 0) {
+            evenNumbers.push(numbers[i]);
+        }
+    }
+
+    return evenNumbers;
+}
+
+console.log(filterEvens([1, 2, 3, 4, 5, 6]));
