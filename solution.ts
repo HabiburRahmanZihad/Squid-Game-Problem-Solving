@@ -1,7 +1,12 @@
+// 1. Reverse a String
 function reverseString(s: string): string {
-  let result = "";
-  for (let i = s.length - 1; i >= 0; i--) {
-    result += s[i];
-  }
-  return result;
+    let reversedText = "";
+
+    for (let i = s.length - 1; i >= 0; i--) {
+        reversedText += s[i];
+    }
+
+    return reversedText;
 }
+
+console.log(reverseString("hello"));
