@@ -121,4 +121,21 @@ function filterEvens(numbers: number[]): number[] {
     return evenNumbers;
 }
 
-console.log(filterEvens([1, 2, 3, 4, 5, 6]));
+// console.log(filterEvens([1, 2, 3, 4, 5, 6]));
+
+
+// 9. Fibonacci Sequence
+function fibonacci(n: number): number[] {
+    const sequence: number[] = [0, 1];
+
+    if (n === 1) return [0];
+
+    for (let i = 2; i < n; i++) {
+        const next = sequence[i - 1] + sequence[i - 2];
+        sequence.push(next);
+    }
+
+    return sequence;
+}
+
+// console.log(fibonacci(10));
