@@ -157,3 +157,20 @@ function isPrime(n: number): boolean {
 
 
 // console.log(isPrime(22));
+
+
+
+// 15. Count Occurrences of a Character
+function countOccurrences(s: string, c: string): number {
+    let count = 0;
+
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === c) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+// console.log(countOccurrences("hello world", "l"));
